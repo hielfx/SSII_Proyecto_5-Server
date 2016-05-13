@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Node.js v4.3.2 Core Modules">
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/internal/repl.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/internal/module.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/internal/freelist.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/internal/cluster.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/internal/child_process.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_tls_wrap.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_tls_legacy.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_tls_common.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_stream_writable.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_stream_wrap.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_stream_transform.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_stream_readable.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_stream_passthrough.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_stream_duplex.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_linklist.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_http_server.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_http_outgoing.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_http_incoming.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_http_common.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_http_client.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_http_agent.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_debug_agent.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/_debugger.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/zlib.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/vm.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/v8.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/util.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/url.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/tty.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/tls.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/timers.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/sys.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/string_decoder.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/stream.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/repl.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/readline.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/querystring.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/punycode.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/process.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/path.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/os.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/net.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/module.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/https.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/http.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/fs.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/freelist.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/events.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/domain.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/dns.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/dgram.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/crypto.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/constants.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/console.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/cluster.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/child_process.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/buffer.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/assert.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/internal/streams/lazy_transform.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/internal/util.js" />
+    <archive path="C:/Users/Dani/.IntelliJIdea14/system/extLibs/nodejs-v4.3.2-src/core-modules-sources/lib/internal/socket_list.js" />
+  </library>
+</eclipse-userlibraries>
+
