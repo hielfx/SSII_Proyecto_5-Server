@@ -3,5 +3,9 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="sqlite-jdbc-3.8.11.2.jar"/>
+	<classpathentry kind="lib" path="jackson-databind-2.7.4.jar"/>
+	<classpathentry kind="lib" path="jackson-core-2.7.4.jar"/>
+	<classpathentry kind="lib" path="javax.json-api-1.0.jar"/>
+	<classpathentry kind="lib" path="jackson-annotations-2.7.0.jar"/>
 	<classpathentry kind="output" path="out/production/SSII-PSI5_Server"/>
 </classpath>
