@@ -1,12 +1,45 @@
-may 14, 2016 2:02:35 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
-INFORMACIÓN: Check table statement: SELECT * FROM sqlite_master WHERE name ='{0}' and type='table';
-may 14, 2016 2:02:57 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
-INFORMACIÓN: Checking if the table {0} exists...
-may 14, 2016 2:03:09 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
-GRAVE: Error while connecting to the database.
-may 14, 2016 2:30:15 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
-INFORMACIÓN: Check table statement: SELECT * FROM sqlite_master WHERE name ='{0}' and type='table';
-may 14, 2016 2:30:18 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
-INFORMACIÓN: Checking if the table {0} exists...
-may 14, 2016 2:30:22 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
-GRAVE: Error while connecting to the database.
+2016-05-14 14:35:52,236 [main] INFO  ssii-psi5  - Check table statement: SELECT * FROM sqlite_master WHERE name ='{0}' and type='table';
+2016-05-14 14:35:55,191 [main] INFO  ssii-psi5  - Checking if the table {0} exists...
+2016-05-14 14:35:56,533 [main] ERROR ssii-psi5  - Error while connecting to the database.
+2016-05-14 14:39:36,663 [main] INFO  ssii-psi5  - Check table statement: SELECT * FROM sqlite_master WHERE name ='{0}' and type='table';
+2016-05-14 14:39:36,700 [main] INFO  ssii-psi5  - Checking if the table {0} exists...
+2016-05-14 14:39:36,701 [main] ERROR ssii-psi5  - Error while connecting to the database.
+java.sql.SQLException: ResultSet is TYPE_FORWARD_ONLY
+	at org.sqlite.jdbc4.JDBC4ResultSet.first(JDBC4ResultSet.java:389)
+	at dsanchez.ssii.psi5.SQLiteUtil.checkTable(SQLiteUtil.java:33)
+	at dsanchez.ssii.psi5.SQLiteTest.main(SQLiteTest.java:9)
+2016-05-14 14:45:22,693 [main] INFO  ssii-psi5  - Check table statement: SELECT * FROM sqlite_master WHERE name ='{0}' and type='table';
+2016-05-14 14:57:01,492 [main] INFO  ssii-psi5  - Check table statement: 
+2016-05-14 14:57:03,172 [main] INFO  ssii-psi5  - Checking if the table {0} exists...
+2016-05-14 14:57:06,006 [main] WARN  ssii-psi5  - The table {0} doesn't exists. Creating table...
+2016-05-14 14:57:09,471 [main] ERROR ssii-psi5  - Error while connecting to the database.
+java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (unrecognized token: "{")
+	at org.sqlite.core.DB.newSQLException(DB.java:890)
+	at org.sqlite.core.DB.newSQLException(DB.java:901)
+	at org.sqlite.core.DB.throwex(DB.java:868)
+	at org.sqlite.core.NativeDB.prepare(Native Method)
+	at org.sqlite.core.DB.prepare(DB.java:211)
+	at org.sqlite.jdbc3.JDBC3Statement.execute(JDBC3Statement.java:60)
+	at dsanchez.ssii.psi5.SQLiteUtil.checkTable(SQLiteUtil.java:42)
+	at dsanchez.ssii.psi5.SQLiteTest.main(SQLiteTest.java:9)
+2016-05-14 14:57:58,989 [main] INFO  ssii-psi5  - Check table statement: 
+2016-05-14 14:57:59,604 [main] INFO  ssii-psi5  - Checking if the table {0} exists...
+2016-05-14 14:58:00,396 [main] WARN  ssii-psi5  - The table {0} doesn't exists. Creating table...
+2016-05-14 15:00:26,920 [main] INFO  ssii-psi5  - Check table statement: 
+2016-05-14 15:00:27,918 [main] INFO  ssii-psi5  - Checking if the table {0} exists...
+2016-05-14 15:00:28,268 [main] WARN  ssii-psi5  - The table {0} doesn't exists. Creating table...
+2016-05-14 15:03:31,046 [main] INFO  ssii-psi5  - Check table statement: 
+2016-05-14 15:03:32,258 [main] INFO  ssii-psi5  - Checking if the table {0} exists...
+2016-05-14 15:03:32,636 [main] WARN  ssii-psi5  - The table {0} doesn't exists. Creating table...
+2016-05-14 15:06:30,841 [main] INFO  ssii-psi5  - Check table statement: 
+2016-05-14 15:06:31,700 [main] INFO  ssii-psi5  - Checking if the table pedido exists...
+2016-05-14 15:06:32,100 [main] WARN  ssii-psi5  - The table pedido doesn't exists. Creating table...
+2016-05-14 15:06:44,814 [main] ERROR ssii-psi5  - Error while connecting to the database.
+java.sql.SQLException: database in auto-commit mode
+	at org.sqlite.jdbc3.JDBC3Connection.commit(JDBC3Connection.java:164)
+	at dsanchez.ssii.psi5.SQLiteUtil.checkTable(Unknown Source)
+	at dsanchez.ssii.psi5.SQLiteTest.main(SQLiteTest.java:9)
+2016-05-14 15:07:15,564 [main] INFO  ssii-psi5  - Check table statement: 
+2016-05-14 15:07:17,281 [main] INFO  ssii-psi5  - Checking if the table pedido exists...
+2016-05-14 15:07:19,746 [main] WARN  ssii-psi5  - The table {pedido already exists
+

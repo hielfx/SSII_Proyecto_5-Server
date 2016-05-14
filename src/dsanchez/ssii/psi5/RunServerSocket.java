@@ -9,6 +9,7 @@ public class RunServerSocket {
     public static void main (String[] args) throws IOException {
 
         //Run the server
+    	LoggerUtil.getLogger().info("Starting server...");
         AndroidServerSocket androidServerSocket = new AndroidServerSocket();
         androidServerSocket.runServer();
 

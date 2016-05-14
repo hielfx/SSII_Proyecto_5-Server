@@ -18,6 +18,8 @@ import java.security.spec.RSAPublicKeySpec;
 
 import javax.net.ServerSocketFactory;
 
+import org.apache.log4j.Logger;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
 import com.sun.org.apache.xml.internal.security.utils.Base64;
@@ -38,6 +40,7 @@ public class AndroidServerSocket {
 
 	public void runServer() {
 		Integer verified; //1 if verified 0 if not
+		LoggerUtil.getLogger().info("Server started successfully");
 		while (true) {
 
 			try {
@@ -62,6 +65,7 @@ public class AndroidServerSocket {
 					
 				}catch(Throwable oops){
 					oops.printStackTrace();
+					LoggerUtil.getLogger().error("Error",oops);
 				}
 				
 				
