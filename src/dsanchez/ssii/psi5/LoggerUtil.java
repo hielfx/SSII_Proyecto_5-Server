@@ -1,9 +1,5 @@
 package dsanchez.ssii.psi5;
 
-import java.util.logging.FileHandler;
-import java.util.logging.Level;
-import java.util.logging.SimpleFormatter;
-
 import org.apache.log4j.Logger;
 
 public class LoggerUtil {
