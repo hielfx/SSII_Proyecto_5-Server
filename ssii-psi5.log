@@ -1,0 +1,12 @@
+may 14, 2016 2:02:35 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
+INFORMACIÓN: Check table statement: SELECT * FROM sqlite_master WHERE name ='{0}' and type='table';
+may 14, 2016 2:02:57 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
+INFORMACIÓN: Checking if the table {0} exists...
+may 14, 2016 2:03:09 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
+GRAVE: Error while connecting to the database.
+may 14, 2016 2:30:15 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
+INFORMACIÓN: Check table statement: SELECT * FROM sqlite_master WHERE name ='{0}' and type='table';
+may 14, 2016 2:30:18 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
+INFORMACIÓN: Checking if the table {0} exists...
+may 14, 2016 2:30:22 PM dsanchez.ssii.psi5.SQLiteUtil checkTable
+GRAVE: Error while connecting to the database.

@@ -1,7 +1,5 @@
 package dsanchez.ssii.psi5;
 
-import java.math.BigInteger;
-
 public class TransmitedMessage {
 
 	private String modulus;

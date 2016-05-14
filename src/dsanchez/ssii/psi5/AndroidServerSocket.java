@@ -37,6 +37,7 @@ public class AndroidServerSocket {
 	}
 
 	public void runServer() {
+		Integer verified; //1 if verified 0 if not
 		while (true) {
 
 			try {
@@ -55,7 +56,9 @@ public class AndroidServerSocket {
 					ObjectMapper mapper = new ObjectMapper();
 					TransmitedMessage transmitedMessage = mapper.readValue(message, TransmitedMessage.class);
 					
-					checkMessageSign(transmitedMessage);
+					verified = checkMessageSign(transmitedMessage);
+					
+					
 					
 				}catch(Throwable oops){
 					oops.printStackTrace();
@@ -83,7 +86,7 @@ public class AndroidServerSocket {
 
 	}
 
-	private Boolean checkMessageSign(TransmitedMessage transmitedMessage) throws NoSuchAlgorithmException, SignatureException, InvalidKeyException, InvalidKeySpecException, Base64DecodingException {
+	private Integer checkMessageSign(TransmitedMessage transmitedMessage) throws NoSuchAlgorithmException, SignatureException, InvalidKeyException, InvalidKeySpecException, Base64DecodingException {
 	
 		Boolean result=false;
 		Signature sg = Signature.getInstance("SHA256WithRSA");
@@ -101,6 +104,6 @@ public class AndroidServerSocket {
 		
 		result = sg.verify(signedMessage);
 		
-		return result;
+		return result ? 1: 0; //If result is true -> return 1; else return 0
 	}
 }
