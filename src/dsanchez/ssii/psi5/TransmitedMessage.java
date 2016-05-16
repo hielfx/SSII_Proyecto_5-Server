@@ -30,7 +30,6 @@ public class TransmitedMessage {
 	private String signedMessage;
 	
 	public TransmitedMessage() {
-		// TODO Auto-generated constructor stub
 	}
 
 	

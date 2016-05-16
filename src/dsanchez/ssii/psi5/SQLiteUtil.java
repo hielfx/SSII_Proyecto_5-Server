@@ -8,12 +8,16 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class SQLiteUtil {
 	
 	private static final String TABLE_NAME = "pedido";
 	
 	private static final String CONECTION = "jdbc:sqlite:ssii-psi5.db";
+	
+	private static final int RETRIEVE_MONTHS = 3; //The number of month (with the actual one) to get the percentages
 	
 	private static Connection conn = null;
 	
@@ -78,13 +82,66 @@ public class SQLiteUtil {
 			LoggerUtil.getLogger().debug("INSERT statement: "+insert);
 			
 			stmt = conn.prepareStatement(insert);//We prepare the statement to include parameters after this
-			stmt.setDate(1, new Date(System.currentTimeMillis()));//The date is from java.sql.Date
+			
+			Date now = new Date(Calendar.getInstance().getTimeInMillis());
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			String sqlDate = sdf.format(now);
+			stmt.setString(1, sqlDate);//The date is from java.sql.Date
 			result = stmt.executeUpdate();
 			
 		}catch(Throwable oops){
 			oops.printStackTrace();//TODO: remove
 			LoggerUtil.getLogger().error("Error while trying to insert the data in the Data Base\n",oops);
 		}
+		return result;
+	}
+	
+	@SuppressWarnings("unused")
+	public static Object[] getPercentages(){
+		Connection conn;
+		Statement stmt;
+		Object[] result = new Object[3];
+		ResultSet rs;
+		
+		//We retrieve the percentage and the date from the current, the past on and before the past one
+		String query;
+		
+		try{
+			LoggerUtil.getMailLogger().info("Atempting to retrieve the percentages from the Data Base");
+			
+			conn = getConnection();
+			stmt = conn.createStatement();
+			
+			result[1]=0.0; //Initialice the percentages
+			
+			for(int i=0;i<RETRIEVE_MONTHS;i++){
+				query = "select strftime('%Y-%m',insert_date), round(avg(integrity),4)*100 from pedido where strftime('%Y-%m',insert_date)=strftime('%Y-%m',date('now','start of month','-" + i + " month')) group by strftime('%Y-%m',insert_date);";
+				
+				//The percentage from the month
+				rs = stmt.executeQuery(query);
+				
+				while(rs.next()){
+					Double percentage = rs.getDouble(2);
+					if(i==0){
+						result[0] = percentage;
+					}else{
+						result[1]= (double) result[1]+percentage;
+					}
+				}
+			}
+			
+			if(RETRIEVE_MONTHS>1){
+				result[1] = (double) result[1]/(RETRIEVE_MONTHS-1*1.0); //Average percentage from previous months
+				result[2] = RETRIEVE_MONTHS-1;
+			}else{
+				result[2] = 0;
+			}
+			
+			LoggerUtil.getMailLogger().info("Percentages retrieved successfully.");
+		}catch(Throwable oops){
+			LoggerUtil.getMailLogger().error("There was a problem retrieving the percentages from the Data Base",oops);
+		}
+		
 		return result;
 	}
 
